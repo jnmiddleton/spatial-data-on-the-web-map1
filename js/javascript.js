@@ -32,6 +32,34 @@ async function addDistrictsGeoJson(url) {
   polygons.addTo(map)
 }
 
+/* get color from feature property */
+function getColor(property) {
+  switch (property) {
+    case 1:
+      return '#ff0000'
+    case 13:
+      return '#009933'
+    case 6:
+      return '#0000ff'
+    case 7:
+      return '#ff0066'
+    default:
+      return '#ffffff'
+  }
+}
+
+
+/* polygon style */
+function polygonStyle(feature) {
+  return {
+    fillColor: getColor(feature.properties.OBJECTID),
+    fillOpacity: 0.5,
+    weight: 1,
+    opacity: 1,
+    color: 'grey',
+  }
+}
+
 // add style to layer
 async function addDistrictsGeoJson(url) {
   const response = await fetch(url)
@@ -65,33 +93,6 @@ function createCircle(feature, latlng) {
   return L.circleMarker(latlng, options)
 }
 
-/* get color from feature property */
-function getColor(property) {
-  switch (property) {
-    case 1:
-      return '#ff0000'
-    case 13:
-      return '#009933'
-    case 6:
-      return '#0000ff'
-    case 7:
-      return '#ff0066'
-    default:
-      return '#ffffff'
-  }
-}
-
-
-/* polygon style */
-function polygonStyle(feature) {
-  return {
-    fillColor: getColor(feature.properties.OBJECTID),
-    fillOpacity: 0.5,
-    weight: 1,
-    opacity: 1,
-    color: 'grey',
-  }
-}
 
 async function addCelltowersGeoJson(url) {
   const response = await fetch(url)
@@ -100,4 +101,14 @@ async function addCelltowersGeoJson(url) {
     pointToLayer: createCircle,
   })
   circles.addTo(map)
+}
+
+// add geoJSON layer
+async function addCelltowersGeoJson(url) {
+  const response = await fetch(url)
+  const data = await response.json()
+  const markers = L.geoJson(data)
+  const clusters = L.markerClusterGroup()
+  clusters.addLayer(markers)
+  clusters.addTo(map)
 }
