@@ -12,4 +12,10 @@ This project is my phase one rendering an interactive web mapping application fo
 ## Data Sources and Libraries
  - GeoJSON: District boundaries and tower locations for Tartu, Estonia.
  - Libraries: Leaflet.js, Leaflet.markercluster, Leaflet.heat.
+
+
+## Local Setup
+ 1. Clone the repository: git clone [https://github.com/jnmiddleton/spatial-data-on-the-web-map1.git](https://github.com/jnmiddleton/spatial-data-on-the-web-map1.git)
+ 2. Open index.html in a modern web browser (Chrome, Firefox, or Safari).
+ 3. Use the top-left UI controls to toggle between the Choropleth and Heatmap modes. Use the Reset button to snap back to the default view (full extent of Tartu).
    
