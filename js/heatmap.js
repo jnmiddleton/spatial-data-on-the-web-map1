@@ -12,12 +12,12 @@ function defaultMapSettings() {
   map.setView([58.3780, 26.7290], 12);
 }
 
-// Convert a GeoJSON feature to the [lat, lon, intensity] format Leaflet.heat expects
+// Convert a GeoJSON feature 
 function heatDataConvert(feature) {
   return [
-    feature.geometry.coordinates[1], // latitude  (GeoJSON stores [lon, lat], so index 1)
-    feature.geometry.coordinates[0], // longitude (index 0)
-    feature.properties.area,         // intensity value — higher area code = stronger heat colour
+    feature.geometry.coordinates[1], 
+    feature.geometry.coordinates[0], 
+    feature.properties.area,         
   ]
 }
 
