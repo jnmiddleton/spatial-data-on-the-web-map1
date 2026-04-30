@@ -51,29 +51,34 @@ body {
 
 /* TITLE */
 .title-block {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;            
-    margin: 30px 5% 20px 5%;     
+    text-align: center; 
+    margin: 30px 5% 20px 5%;
+    color: #2c3e50;     
 }
 
 .title-block h1 {
     font-size: 2rem;
-    font-weight: normal;
-    flex-grow: 1;                
+    font-weight: normal;              
 }
 
-.reset-btn {
-    padding: 6px 12px;
-    cursor: pointer;
-    background: white;
-    border: 1px solid #ccc;
+.map-button {
+    position: absolute; /* Positions it relative to the map div */
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* High number ensures it stays above map tiles */
+    
+    /* Styling to make it look like a map control */
+    padding: 8px 12px;
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.2);
     border-radius: 4px;
     font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.reset-btn:hover {
-    background-color: #f0f0f0;
+.map-button:hover {
+    background-color: #f4f4f4;
 }
 
 /* CONTAINER */
@@ -82,7 +87,7 @@ body {
   padding-right: 5%;
 }
 
-/* 5. MAP */
+/* MAP */
 #map {
   height: 700px;
   width: 100%;
