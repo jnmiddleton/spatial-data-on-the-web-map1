@@ -1,0 +1,87 @@
+/* ===== RESET & BASE ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+/* BANNER */
+.banner-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  object-position: center 68%;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #2c3e50;
+  padding: 0 5%;
+  display: flex;
+  gap: 0;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+}
+
+.navbar a:hover {
+  background-color: #34495e;
+}
+
+/* Active class */
+.navbar a.active {
+  color: #f39c12;
+  text-decoration: underline;
+  background-color: #1a252f;
+}
+
+/* TITLE */
+.title-block {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.title-block h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+/* CONTAINER */
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* 5. MAP */
+#map {
+  height: 700px;
+  width: 100%;
+  border: 1px solid #cccccc;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 30px;
+  padding: 20px 5%;
+  background-color: #2c3e50;
+  color: #bdc3c7;
+  text-align: center;
+  font-size: 14px;
+}
