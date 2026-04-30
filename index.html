@@ -6,16 +6,12 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <!-- Styling of marker cluster plugin -->
+    <!-- Marker Cluster CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     <title>Web GIS Application</title>
   </head>
   <body>
-
-     <!-- script of marker cluster plugin -->
-    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-
     <!-- Banner -->
     <div class="banner">
       <img src="img/banner.jpeg" alt="Banner" class="banner-img" />
@@ -24,8 +20,8 @@
     <!-- Navbar -->
     <nav class="navbar">
       <a href="index.html" class="active">Basic Map</a>
-      <a href="#">Choropleth Map</a>
-      <a href="#">Heatmap</a>
+      <a href="choroplethmap.html">Choropleth Map</a>
+      <a href="heatmap.html">Heatmap</a>
     </nav>
 
     <!-- Title -->
@@ -33,7 +29,7 @@
       <h1>Web GIS Application</h1>
     </div>
 
-    <!-- Container with map1 inside -->
+    <!-- Map container -->
     <div class="container">
       <div id="map"></div>
     </div>
@@ -45,8 +41,9 @@
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Marker Cluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <!-- Custom JS -->
     <script src="js/javascript.js"></script>
-
   </body>
 </html>
