@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <title>Choropleth Map</title>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="banner">
+      <img src="img/banner.jpeg" alt="Banner" class="banner-img" />
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html">Basic Map</a>
+      <a href="choroplethmap.html" class="active">Choropleth Map</a>
+      <a href="heatmap.html">Heatmap</a>
+    </nav>
+
+    <!-- Title -->
+    <div class="title-block">
+      <h1>Choropleth Map</h1>
+    </div>
+
+    <!-- Map container -->
+    <div class="container">
+      <div id="map"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; Jessica Middleton, University of Tartu, 2026
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- leaflet-choropleth plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-choropleth@1.1.4/dist/choropleth.js"></script>
+    <!-- Custom JS -->
+    <script src="js/choroplethmap.js"></script>
+  </body>
+</html>
