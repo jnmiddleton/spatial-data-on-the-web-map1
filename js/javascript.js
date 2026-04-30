@@ -36,19 +36,13 @@ async function addDistrictsGeoJson(url) {
 }
 
 /* get color from feature property */
+let values = features.map(f => f.properties.your_property_name);
+let min = Math.min(...values);
+let max = Math.max(...values);
+
 function getColor(property) {
-  switch (property) {
-    case 1:
-      return '#ff0000'
-    case 13:
-      return '#009933'
-    case 6:
-      return '#0000ff'
-    case 7:
-      return '#ff0066'
-    default:
-      return '#ffffff'
-  }
+    let ratio = (property - min) / (max - min);
+    return `hsl(0, 100%, ${90 - (ratio * 60)}%)`;
 }
 
 
