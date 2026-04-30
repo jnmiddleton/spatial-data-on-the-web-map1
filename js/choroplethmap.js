@@ -57,3 +57,7 @@ async function addGeoJson(url) {
 }
 
 addGeoJson('geojson/tartu_city_districts_edu.geojson')
+
+document.getElementById('resetButton').onclick = function() {
+    location.reload();
+};
