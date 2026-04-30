@@ -32,6 +32,7 @@ async function addGeoJson(url) {
 
 addGeoJson('geojson/tartu_city_celltowers_edu.geojson')
 
+//button
 document.getElementById('resetButton').onclick = function() {
     location.reload();
 };
