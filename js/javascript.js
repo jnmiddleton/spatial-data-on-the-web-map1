@@ -7,6 +7,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19
 }).addTo(map);
 
+document.getElementById('resetButton').onclick = function() {
+    map.setView([58.3780, 26.7290], 12); // Snap back to default
+};
 
 // add geoJSON polygons layer*
 async function addDistrictsGeoJson(url) {

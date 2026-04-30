@@ -76,6 +76,25 @@ body {
   border: 1px solid #cccccc;
 }
 
+.map-button {
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+    z-index: 1000; 
+    
+    padding: 8px 12px;
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.map-button:hover {
+    background-color: #f4f4f4;
+}
+
 /* FOOTER */
 .footer {
   margin-top: 30px;
