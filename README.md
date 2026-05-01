@@ -35,5 +35,5 @@ spatial-data-on-the-web-map1/
 ```
 ## Further Reading
 
-The interactive web rendering is available on my [ePortfolio](https://sites.google.com/view/jessicamiddleton-eportfolio/kaggle-competitions/predicting-irrigation-need) or at [https://jnmiddleton.github.io/spatial-data-on-the-web-map1/](https://jnmiddleton.github.io/spatial-data-on-the-web-map1/).
+The interactive web rendering is available on my [ePortfolio](https://sites.google.com/view/jessicamiddleton-eportfolio/selected-geospatial-visualizations/interactive-web-mapping?authuser=0) or at [https://jnmiddleton.github.io/spatial-data-on-the-web-map1/](https://jnmiddleton.github.io/spatial-data-on-the-web-map1/).
    
