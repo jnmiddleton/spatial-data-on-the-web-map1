@@ -14,8 +14,23 @@ This project is my phase one rendering an interactive web mapping application fo
  - Libraries: Leaflet.js, Leaflet.markercluster, Leaflet.heat.
 
 
-## Local Setup
- 1. Clone the repository: git clone [https://github.com/jnmiddleton/spatial-data-on-the-web-map1.git](https://github.com/jnmiddleton/spatial-data-on-the-web-map1.git)
- 2. Open index.html in a modern web browser (Chrome, Firefox, or Safari).
- 3. Use the top-left UI controls to toggle between the Choropleth and Heatmap modes. Use the Reset button to snap back to the default view (full extent of Tartu).
+## Repository Structure
+```
+spatial-data-on-the-web-map1/
+├── README.md
+├── choroplethmap.html
+├── heatmap.html
+├── index.html
+├── css/
+│     └── styles.css
+├── img/
+│     └── banner.jpeg
+├── js/
+      ├── choroplethmap.js
+      ├── heatmap.js
+│     └── javascript.js
+└── geojson/
+      ├── tartu_city_celltowers_edu.geojson
+      └── tartu_city_districts_edu.geojson
+```
    
