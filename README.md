@@ -10,7 +10,7 @@ This project is my phase one rendering an interactive web mapping application fo
 
 
 ## Data Sources and Libraries
- - GeoJSON: District boundaries and tower locations for Tartu, Estonia.
+ - GeoJSON: District boundaries and tower locations for Tartu, Estonia were provided by course instructor.
  - Libraries: Leaflet.js, Leaflet.markercluster, Leaflet.heat.
 
 
