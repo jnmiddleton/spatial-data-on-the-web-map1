@@ -33,4 +33,7 @@ spatial-data-on-the-web-map1/
       ├── tartu_city_celltowers_edu.geojson
       └── tartu_city_districts_edu.geojson
 ```
+## Further Reading
+
+The interactive web rendering is available on my [ePortfolio](https://sites.google.com/view/jessicamiddleton-eportfolio/kaggle-competitions/predicting-irrigation-need) or at [https://jnmiddleton.github.io/spatial-data-on-the-web-map1/](https://jnmiddleton.github.io/spatial-data-on-the-web-map1/).
    
